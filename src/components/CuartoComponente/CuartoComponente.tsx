@@ -1,4 +1,5 @@
 import { useState } from "react";
+import {AgregarItem} from "./AgregarItem";
 
 interface values {
   key: string;
@@ -10,7 +11,7 @@ const Items = ({ key, name, value }: values) => {
   return (
     <li>
       {name}
-      {value ? "✔️" : "❌"}
+      {value ? "✅️️" : "⛔"}
     </li>
   );
 };
@@ -32,6 +33,7 @@ export const CuartoComponente = () => {
   return (
     <>
       <h1> Cuarto componente</h1>
+      <AgregarItem agregarItem={setArreglo}></AgregarItem>
       <ol>
         {arreglo.map((item: any) => (
           <Items key={item.name} name={item.name} value={item.value}></Items>
