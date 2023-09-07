@@ -6,16 +6,18 @@ import { PrimerComponente } from "./components/PrimerComponente/PrimerComponente
 import { SegundoComponente } from "./components/SegundoComponente/SegundoComponente";
 import { TercerComponente } from "./components/TercerComponente/TercerComponente";
 import { CuartoComponente } from "./components/CuartoComponente/CuartoComponente";
+import {QuintoComponente} from "./components/QuintoComponente/QuintoComponente";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,
 );
 root.render(
   <React.StrictMode>
-    <PrimerComponente />
-    <SegundoComponente name="Nombre" lastName="Apellido" age={39} />
-    <TercerComponente value={0} />
-    <CuartoComponente />
+    {/*<PrimerComponente />*/}
+    {/*<SegundoComponente name="Nombre" lastName="Apellido" age={39} />*/}
+    {/*<TercerComponente value={0} />*/}
+    {/*<CuartoComponente />*/}
+    <QuintoComponente />
   </React.StrictMode>,
 );
 
